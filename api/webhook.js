@@ -1,4 +1,6 @@
 export default async function handler(req, res) {
+  console.log("Webhook triggered"); // ← вот эта строка
+
   const TOKEN = process.env.BOT_TOKEN;
   const TELEGRAM_API = `https://api.telegram.org/bot${TOKEN}`;
 
